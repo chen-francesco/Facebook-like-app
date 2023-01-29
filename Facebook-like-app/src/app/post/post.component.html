@@ -1,0 +1,15 @@
+<div style="padding: 1px; background-color: rgb(101, 100, 105);">
+    <div style="background-color: white; padding: 3px;">
+        <div style="font-weight: bold;">
+            {{post.autore}}
+        </div>
+        <div>
+            {{post.testo}}
+        </div>
+        <div style="margin-top:10px;">
+            <button (click)="addVote()" class="btn btn-primary">
+                Aggiungi voto <span class="badge badge-pill badge-light">{{post.getVotes()}}</span>
+            </button>
+        </div>
+    </div>
+</div>
