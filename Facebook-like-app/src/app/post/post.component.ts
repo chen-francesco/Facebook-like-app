@@ -12,10 +12,14 @@ export class PostComponent {
   @Input() post:Post;
 
   constructor() {
-    this.post = new Post("","");
+    this.post = new Post(new AppComponent,"","",0,0);
   }
   addVote():boolean{
     this.post.voteUp()
+    return false
+  }
+  addComment():boolean {
+    this.post.addComment()
     return false
   }
 
