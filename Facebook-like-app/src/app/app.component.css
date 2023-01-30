@@ -1,0 +1,14 @@
+p {
+    color:darkorange;
+            font-size: italic;
+            background-color: black;
+            border-radius: 5px;
+}
+
+textarea {
+    color:black;
+            font-size: italic;
+            background-color: rgb(226, 113, 72);
+            border-radius: 5px;
+}
+

@@ -5,7 +5,7 @@ import { Post } from './post.model'
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.css']
+  styleUrls: ['./post.component.css', './post.componente2.css']
 })
 export class PostComponent {
   @HostBinding('attr.class') cssClass = 'card';
