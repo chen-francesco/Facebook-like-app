@@ -1,17 +1,17 @@
 p {
-    color:darkorange;
+    color: black;
             font-size: italic;
-            background-color: black;
+            background-color: white;
             border-radius: 5px;
 }
 
 textarea {
     color:black;
             font-size: italic;
-            background-color: rgb(226, 113, 72);
+            background-color: rgb(252, 252, 252);
             border-radius: 5px;
 }
 
-div {
+body {
     background-color: blue;
 }
