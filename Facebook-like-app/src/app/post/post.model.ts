@@ -1,16 +1,12 @@
-import { AppComponent } from "../app.component";
-
 export class Post {
     autore: string;
     testo: string;
     votes: number;
     rootId: number;
     postId: number;
-    origin: AppComponent;
     commenti: number;
   
-    constructor(origin: AppComponent,autore: string, testo: string, rootId: number, postId: number) {
-      this.origin = origin;
+    constructor(autore: string, testo: string, rootId: number, postId: number) {
       this.autore = autore;
       this.testo = testo;
       this.rootId = rootId;
@@ -25,15 +21,7 @@ export class Post {
     commentUp():void {
         this.commenti += 1
     }
-    addComment():boolean {
-        this.origin.selectPost(this.postId)
-        return false
-      }
     getVotes():string {
-        if(this.votes < 1000000){
-            return this.votes.toString()
-        }else{
-            return "+ 1000000"
-        }
+        return this.votes.toString()
     }
 }

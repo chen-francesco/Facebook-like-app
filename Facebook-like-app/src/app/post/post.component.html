@@ -6,15 +6,6 @@
         <div style="background-color: rgb(234, 234, 234)">
             {{post.testo}}
         </div>
-        <div style="margin-top:10px;">
-            <!-- rootid {{post.rootId}} postid {{post.postId}} -->
-            <button (click)="addVote()" class="btn btn-primary">
-                Aggiungi voto <span class="badge badge-pill badge-light">{{post.getVotes()}}</span>
-            </button>
-            <button (click)="addComment()" class="btn btn-primary" style="margin-left: 30px;">
-                Aggiungi commento <span class="badge badge-pill badge-light">{{post.commenti}}</span>
-            </button>
-        </div>
     </div>
 </div>
 <hr>

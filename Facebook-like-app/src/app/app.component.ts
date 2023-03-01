@@ -22,7 +22,7 @@ export class AppComponent {
 
   addPost(autore:HTMLInputElement, testo:HTMLTextAreaElement):boolean{
     if(!(autore.value.trim() === "" || testo.value.trim() === "")){
-      this.posts.push(new Post(this, autore.value, testo.value, this.idSelected, this.idIndex));
+      this.posts.push(new Post(autore.value, testo.value, this.idSelected, this.idIndex));
       this.idIndex += 1;
       autore.value = '';
       testo.value = '';
@@ -68,5 +68,13 @@ export class AppComponent {
       }
     }
     return x.sort((a: Post, b: Post) => a.rootId - b.rootId);
+  }
+  addVote(post:Post):boolean{
+    post.voteUp()
+    return false
+  }
+  addComment(post:Post):boolean {
+    this.selectPost(post.postId)
+    return false
   }
 }
