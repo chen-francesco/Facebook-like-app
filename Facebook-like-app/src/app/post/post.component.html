@@ -1,11 +1,14 @@
-<div style="padding: 1px;">
-    <div style="background-color: white; padding: 3px;">
-        <div style="font-weight: bold; background-color: rgb(255, 189, 7); color: black">
-            {{post.autore}}
-        </div>
-        <div style="background-color: rgb(234, 234, 234)">
-            {{post.testo}}
+<body style="background-color: rgb(234, 234, 234)">
+    <div style="padding: 1px;">
+        <div>
+            <div style="font-weight: bold; padding: 3px; background-color: rgb(217, 218, 224); color: black">
+                {{post.autore}}
+            </div>
+            <div style="padding-left: 5px;">
+                {{post.testo}}
+            </div>
+            <P>root id {{post.rootId}}</P>
+            <P>post id {{post.postId}}</P>
         </div>
     </div>
-</div>
-<hr>
+</body>
